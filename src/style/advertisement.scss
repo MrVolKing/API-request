@@ -1,0 +1,26 @@
+.advertisement{
+    padding-bottom: 36px;
+
+    &__blocktitle{
+        padding: 6px 0 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__title{
+        font-size: 14px;
+        color: $colortext;
+    }
+
+    &__blockdescription{
+        line-height: 0px;
+        margin-top: 8px;
+        color: #d3d3d3;
+    }
+
+    &__description{
+        font-size: 11px;
+    }
+}

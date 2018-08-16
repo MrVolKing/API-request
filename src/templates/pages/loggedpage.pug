@@ -1,0 +1,80 @@
+extends ../template
+
+block varibles
+    - var title = "Service-logged"
+
+block content
+    .content
+        .headerlogged
+            .headerlogged__logo
+                img(src="../images/logo1.png", alt="")
+            .headerlogged__btn
+                button.headerlogged__button Log In Now
+            .headerlogged__descriptiontext
+                .headerlogged__titleblock
+                    span.headerlogged__titletext Home of Dentistry
+                .headerlogged__textblock
+                    span.headerlogged__text Denteez was created by dentists for dentistry in order to make the life of everyone involved in dentistry easier.
+        
+        .blockbg
+
+        .about
+            .about__title
+                span.about__titletext About Denteez
+            .about__content
+                .about__left
+                    span.about__lefttext Why is it always so difficult to find what you are looking for in dentistry? Whether it is the latest advancement in technology or techniques or simply a review or understanding of the vast amount of products? Perhaps finding someone to just fix your broken equipment or simply hiring new staff or looking for that new job?
+                .about__right
+                    span.about__righttetx Our mission is to give every dental professional the possibility to discuss and share all aspects of their profession, their practice and their business. We aim to make the world of dentistry easy and accessible, so every dental professional can find what they are looking for quickly and easily all in one place.
+        form.form#loginform
+            .form__content
+                .form__note
+                    span.form__notetext Fields marked “*” are required
+                .form__selectblock
+                    span.form__selecttext Enquiry Type *
+                    p#selectvalid
+                    select#select.form__select(name="")                     
+                    textarea#selectvalue.form__selectinput(placeholder="Other", Type="text")
+                .form__emailnameblock
+                    .form__nameblock
+                        span.form__nameblocktext#login Name *
+                        p#namevalid
+                        textarea#name.form__input(placeholder="Dentist", Type="text")
+                    .form__emailblock
+                        span.form__nameblocktext#password Email *
+                        p#emailvalid
+                        textarea#email.form__input(placeholder="rachelm@gmail.com", Type="email")
+                .form__subjectblock
+                    span.form__nameblocktext Subject *
+                    p#subjectvalid
+                    textarea#subject.form__subjectinput
+                .form__descriptionblock
+                    .form__blockcounter
+                        span.form__nameblocktext Description *
+                        span.form__counter (0/100)
+                    p#descriptionvalid
+                    textarea#description.form__descriptioninput(maxlength="100", Type="text")
+                span#imgvalid 
+                .form__savefotoblock
+                    label.form__label(for="iputfileimg")
+                        input.form__inputfileimg#inputfileimg(type="file")
+                        span.form__spantitle Add photo 
+                        span.form__spandescription Minimum size of 300x300 jpeg ipg png 5 MB
+                .form__btn
+                    input(Type="submit" value="Submit").form__button#submit
+            
+        .footer
+            .footer__left
+                span.footer__text Denteez Copyright 2015
+            .footer__right
+                .footer__row1
+                    .footer__text.footer__text_marginl Support
+                .footer__row2
+                    .footer__text.footer__text_marginl Privacy Policy 
+                .footer__row3
+                    .footer__text.footer__text_marginl Terms of use
+
+    script(src="/scripts/app.js")
+                
+
+        

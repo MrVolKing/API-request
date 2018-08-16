@@ -1,0 +1,121 @@
+.connent{
+    position: relative;
+}
+
+.headerlogged{
+    position: relative;
+    background-image: url(../images/loggedfoto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 510px;
+
+    &__logo{
+        position: absolute;
+        top: 40px;
+        left: 50px;
+    }
+
+    &__btn{
+        position: absolute;
+        top: 45px;
+        right: 40px;
+    }
+
+    &__button{
+        width: 109px;
+        height: 31px;
+        background-color: $green;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-size: 14px;
+    }
+
+    &__descriptiontext{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__titletext{
+        font-size: 48px;
+        color: #f3f4f6;
+    }
+
+    &__textblock{
+        width: 490px;
+        margin-top: 26px;
+    }
+
+    &__text{
+        font-size: 20px;
+        color: #f3f4f6;
+    }
+}
+
+.blockbg{
+    background-image: url(../images/loggedbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 818px;
+    
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 112px;
+    border-bottom: 1px solid $colorborder;
+
+    &__title{
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    &__titletext{
+        font-size: 30px;
+        color: $colortitle;
+    }
+
+    &__content{
+        padding: 0 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left{
+        width: 592px;
+        color: $colortext;
+        word-spacing: 1px;
+
+    }
+
+    &__right{
+        width: 592px;
+        color: $colortext;
+        word-spacing: 1px;
+
+    }
+}
+
+.footer{
+    padding: 34px 80px 32px;
+    display: flex;
+    justify-content: space-between;
+
+    &__text{
+        font-size: 12px;
+        color: #b7bfcd;
+
+        &_marginl{
+            margin-left: 28px;
+        }
+    }
+
+    &__right{
+        display: flex;
+
+    }
+}

@@ -1,0 +1,129 @@
+.content-left{
+    width: 244px;
+    padding: 14px 16px 0;
+
+    &__paragraphmenu{
+        display: flex;
+        align-items: center;
+        padding-bottom: 14px;
+        margin-bottom: 14px;
+        border-bottom: 1px solid $colorborder;
+    }
+
+    &__blockdescriptionmenu{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__blockicon{
+        padding: 0 0 0 3px;
+    }
+
+    &__icon{
+        margin-right: 27px;
+    }
+
+    &__descriptiontextmenu{
+        color: #59606b;
+    }
+
+    &__advertisementblock{
+        border-bottom: 1px solid $colorborder;
+    }
+
+    &__companies{
+        border-bottom: 1px solid $colorborder;
+    }
+
+    &__namecompany{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__name{
+        color: $colortitle;
+    }
+
+    &__linkcompany{
+        font-size: 12px;
+        text-decoration: none;
+        color: $colortitle;
+    }    
+
+    &__showcompanies{
+        display: flex;
+        padding: 0 0 20px 1px;
+    }
+
+    &__blockimg{
+        margin-right: 10px;
+    }
+
+    &__imgcompany{
+        width: 80px;
+        height: 80px;
+        border: none;
+        border-radius: 6px;
+    }
+
+    &__blockdescriptioncompany{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__descriptiontextcompany{
+        font-size: 14px;
+        color: $colortext;
+    }
+
+    &__descriptioncompany{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__fromcompany{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__fromtextcompany{
+        font-size: 14px;
+        color: $colortext;
+    }
+
+    &__blocklinkcompany{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__footer{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        color: #b7bfcd;
+        padding: 18px 36px 0 1px;
+        line-height: 14px;
+    }
+
+    &__footer1{
+        margin-bottom: 20px;
+    }
+
+    &__footer2{
+        margin-right: 21px;
+    }
+    
+}
+

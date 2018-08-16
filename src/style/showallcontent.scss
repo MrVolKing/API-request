@@ -1,0 +1,27 @@
+.showallcontent{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 20px 0 20px 1px;
+
+    &__titleblock{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__titletext{
+        color: $colortext;
+    }
+
+    &__linkblock{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $colortitle;
+    }
+}

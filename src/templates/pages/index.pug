@@ -1,0 +1,195 @@
+extends ../template
+
+block varibles
+    - var title = "Service-directory"
+
+block content
+   
+    section.header  
+        .wrapper
+            .header__content
+                .header__logo
+                    img(src="../images/logo1.png", alt="")
+                .header__Search
+                        input.header__input(type="text", placeholder ="Company Name")
+                .header__icon 
+                    div.header__chat
+                        svg(class="header__svg1")
+                            use(xlink:href="./images/sprite/sprite.svg#chat")
+                    div.header__notifications
+                        svg(class="header__svg2")
+                            use(xlink:href="./images/sprite/sprite.svg#notifications")  
+                .header__face
+                    .header__fotoblock
+                        img.header__foto(src="../images/user.png", alt="")
+                    .header__descriptionblock
+                        span.header__description Maximillian Beekeeper 
+
+
+    - 
+        var menus = [
+            {
+                icon: "../images/home.png",
+                title: "Feed"
+            },
+            {
+                icon: "../images/m2.png",
+                title: "Ask Colleague"
+            },
+            {
+                icon: "../images/m3.png",
+                title: "Companies"
+            },
+            {
+                icon: "../images/m4.png",
+                title: "Service Directory"
+            }
+        ];
+
+    - 
+        var names = [
+            {
+                imag: "../images/company.png",
+                name: "Company Name",
+                description: "Manufacturer",
+                from: "Belgrade, Serbia",
+                job: "Doctor Dulitle (dentist)кмумукукмукмукмукмукм"
+            },
+            {
+                imag: "../images/company.png",
+                name: "Company Name",
+                description: "Service Provider",
+                from: "New York, USA",
+                job: "Doctor Dulitle (dentist)кмумукукмукмукмукмукм"
+            },
+            {
+                imag: "../images/company.png",
+                name: "Company Name",
+                description: "Supplier",
+                from: "London, England",
+                job: "Doctor Dulitle (dentist)кмумукукмукмукмукмукм"
+            }
+        ];
+
+    - 
+        var productsnames = [
+            {
+                imag: "../images/product.png",
+                name: "Product name",
+                txt: "Product Short Description. The quick brown fox jumps over the lazy dog."
+            },
+            {
+                imag: "../images/product.png",
+                name: "Product name",
+                txt: "Product Short Description. The quick brown fox jumps over the lazy dog."
+            }
+        ]
+
+
+        
+
+
+    section.threecolumns 
+        .threecolumns-content  
+            .content-left 
+                .content-left__menu
+                    each menu in menus
+                        .content-left__paragraphmenu
+                            .content-left__blockicon
+                                img.content-left__icon(src=`${menu.icon}`, alt="")
+                            .content-left__blockdescriptionmenu
+                                span.content-left__descriptiontextmenu= menu.title
+                .content-left__advertisementblock
+                    .advertisement
+                        .advertisement__blocktitle
+                            span.advertisement__title Advertisement
+                        .advertisement__blockimg
+                            img.advertisement__img(src="/images/advertisement.png", alt="")
+                        .advertisement__blockdescription
+                            span.advertisement__description Ads By Denteez.com
+                .content-left__companies
+                    .showallcontent
+                        .showallcontent__titleblock
+                            span.showallcontent__titletext Featured Companies
+                        .showallcontent__linkblock
+                            a.showallcontent__link(href="#") See All 
+                    each name in names
+                        .content-left__showcompanies
+                            .content-left__blockimg
+                                img.content-left__imgcompany(src=`${name.imag}`, alt="")
+                            .content-left__blockdescriptioncompany
+                                .content-left__namecompany
+                                    span.content-left__name= name.name
+                                .content-left__descriptioncompany
+                                    span.content-left__descriptiontextcompany= name.description
+                                .content-left__fromcompany
+                                    span.content-left__fromtextcompany= name.from
+                                .content-left__blocklinkcompany
+                                    a.content-left__linkcompany(href="#") Follow Now
+                .content-left__footer
+                    .content-left__footer1
+                        span Denteez Copyright 2015
+                    .content-left__footer2
+                        span Terms of use
+                    .content-left__footer3
+                        span Privacy Policy
+            .content-center
+                .content-center__addservice
+                    .content-center__titleblock
+                        span.content-center__title Service Directory
+                    .content-center__blocklink
+                        a(href="loggedpage.html").content-center__linktext Add New Service
+                .content-center__blockservices#blockservices
+                
+                            
+            .content-right 
+                .content-right__people
+                    .showallcontent
+                        .showallcontent__titleblock
+                            span.showallcontent__titletext People you may know
+                        .showallcontent__linkblock
+                            a.showallcontent__link(href="#") See All  
+                    each name in names
+                        .content-right__showpeople                          
+                            .content-right__namepeople
+                                    span.content-right__name= name.name
+                            .content-right__peopleblock
+                                .content-right__blockimg
+                                    img.content-right__imgpeople(src=`${name.imag}`, alt="")
+                                .content-right__blockdescriptionpeople
+                                    .content-right__descriptionpeople
+                                        span.content-right__descriptiontextpeople= name.job
+                                    .content-right__from
+                                        span.content-right__descriptiontextpeople= name.from
+                                    .content-right__blocklinkpeople
+                                        a.content-right__linkpeople(href="#") Follow Now
+                .content-right__products
+                    .showallcontent
+                        .showallcontent__titleblock
+                            span.showallcontent__titletext Featured Products
+                        .showallcontent__linkblock
+                            a.showallcontent__link(href="#") See All
+                    each productsname in productsnames
+                        .content-right__showproducts                          
+                            .content-right__nameproducts
+                                    span.content-right__name= productsname.name
+                            .content-right__productsblock
+                                .content-right__blockimg
+                                    img.content-right__imgproducts(src=`${productsname.imag}`, alt="")
+                                .content-right__blockdescriptionproducts
+                                    .content-right__descriptionproducts
+                                        span.content-right__descriptiontextproducts= productsname.txt
+                                    
+                                    
+                .content-right__advertisementblock
+                    .advertisement
+                        .advertisement__blocktitle
+                            span.advertisement__title Advertisement
+                        .advertisement__blockimg
+                            img.advertisement__img(src="/images/advertisement.png", alt="")
+                        .advertisement__blockdescription
+                            span.advertisement__description Ads By Denteez.com
+                        
+    script(src="/scripts/app.js")
+        
+

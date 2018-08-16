@@ -1,0 +1,147 @@
+.form{
+    position: absolute;
+    top: 410px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__content{
+        width: 763px;
+        padding: 20px;
+        border: 1px solid $colortext;
+        border-radius: 6px;
+        background-color: white;
+    }
+
+    &__notetext{
+        color: #c1c1c1;
+    }
+
+    &__selectblock{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+
+    }
+
+    &__selecttext{
+        margin-bottom: 7px;
+        color: $colortitle;
+    }
+
+    &__select{
+        width: 722px;
+        height: 52px;
+        border: 1px solid $colortext;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        padding-left: 18px;
+    }
+
+    &__selectinput{
+        width: 722px;
+        height: 52px;
+        border: 1px solid $colortext;
+        border-radius: 6px;
+        resize: none;
+        padding: 18px 0 0 20px;
+    }
+
+    &__emailnameblock{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__blockcounter{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nameblocktext{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        color: $colortitle;
+    }
+
+    &__input{
+        width: 344px;
+        height: 52px;
+        resize: none;
+        border: 1px solid $colortext;
+        border-radius: 6px;
+        padding: 18px 0 0 20px;
+    }
+
+    &__subjectblock{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__subjectinput{
+        width: 722px;
+        height: 52px;
+        border: 1px solid $colortext;
+        border-radius: 6px;
+        resize: none;
+        margin-bottom: 20px;
+        padding: 18px 0 0 20px;
+    }
+
+    &__descriptioninput{
+        width: 722px;
+        height: 150px;
+        border: 1px solid $colortext;
+        border-radius: 6px;
+        resize: none;
+        padding: 18px 0 0 20px;
+    }
+
+    &__savefotoblock{
+        display: flex;
+        width: 130px;
+        height: 130px;
+        border: 1px solid $colortext;
+        border-radius: 6px;
+        margin-top: 20px;
+        background-color: #f7f7f7;
+    }
+
+    &__label{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__inputfileimg{
+        display: none;
+    }
+
+    &__spantitle{
+        color: $colortext;
+    }
+
+    &__spandescription{
+        width: 88px;
+        text-align: center;
+        font-size: 12px;
+        color: #c2c2c4;
+    }
+
+    &__btn{
+        position: absolute;
+        bottom: -72px;
+        left: 0;
+    }
+
+    &__button{
+        width: 763px;
+        height: 52px;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        background-color: $green;
+    }
+}

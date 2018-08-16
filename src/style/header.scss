@@ -1,0 +1,91 @@
+.header{
+    background-color: $green;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: row;
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 16px;
+    }
+
+    &__logo{
+        margin-right: 31px;
+    }
+
+    &__input{
+        background-image: url(../images/i/Search.svg);
+        background-color: #73993d;
+        background-repeat: no-repeat;
+        background-position-x: 10px;
+        background-position-y: 9px;
+        border: none;
+        border-radius: 5px;
+        width: 435px;
+        height: 34px;
+        color: white;
+        margin-right: 30px;
+        padding-left: 38px;
+        @include placeholder {
+            color: white;
+        } 
+        
+    
+    }
+
+    &__icon{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__svg1{
+        width: 28px;
+        height: 24px;
+        fill: white;
+        margin-right: 20px;
+    }
+
+    &__svg2{
+        width: 25px;
+        height: 25px;
+        fill: white;
+        margin-right: 31px;
+    }
+
+    &__face{
+        display: flex;
+    }
+
+    &__fotoblock{
+        margin-right: 11px;
+    }
+
+    &__foto{
+        width: 33px;
+        height: 33px;
+        border: none;
+        border-radius: 6px;
+    }
+
+    &__descriptionblock{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__description{
+        color: white;
+    }
+   
+}
+
+.header__input{
+    @include placeholder {
+        color: white;
+    }
+}

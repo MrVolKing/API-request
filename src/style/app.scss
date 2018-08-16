@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+
+@import './helpers/wrapper.scss';
+@import './helpers/mixins.scss';  
+@import './helpers/variables.scss';
+@import 'header.scss';
+@import 'content-left.scss';
+@import 'content-center.scss';
+@import 'content-right.scss';
+@import 'showallcontent.scss';
+@import 'threecolumns-content.scss';
+@import 'advertisement.scss';
+@import 'loggedpage.scss';
+@import 'form.scss';
+

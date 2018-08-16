@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Service-logged</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=devise-width, initial-scale=1" name="viewport">
+    <meta content="ie-edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="/styles/app.min.css">
+    <script src="/scripts/app.js" defer></script><link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  </head>
+  <body>
+    <div class="content">
+      <div class="headerlogged">
+        <div class="headerlogged__logo"><img src="../images/logo1.png" alt=""></div>
+        <div class="headerlogged__btn">
+          <button class="headerlogged__button">Log In Now</button>
+        </div>
+        <div class="headerlogged__descriptiontext">
+          <div class="headerlogged__titleblock"><span class="headerlogged__titletext">Home of Dentistry</span></div>
+          <div class="headerlogged__textblock"><span class="headerlogged__text">Denteez was created by dentists for dentistry in order to make the life of everyone involved in dentistry easier.</span></div>
+        </div>
+      </div>
+      <div class="blockbg"></div>
+      <div class="about">
+        <div class="about__title"><span class="about__titletext">About Denteez</span></div>
+        <div class="about__content">
+          <div class="about__left"><span class="about__lefttext">Why is it always so difficult to find what you are looking for in dentistry? Whether it is the latest advancement in technology or techniques or simply a review or understanding of the vast amount of products? Perhaps finding someone to just fix your broken equipment or simply hiring new staff or looking for that new job?</span></div>
+          <div class="about__right"><span class="about__righttetx">Our mission is to give every dental professional the possibility to discuss and share all aspects of their profession, their practice and their business. We aim to make the world of dentistry easy and accessible, so every dental professional can find what they are looking for quickly and easily all in one place.</span></div>
+        </div>
+      </div>
+      <form class="form" id="loginform">
+        <div class="form__content">
+          <div class="form__note"><span class="form__notetext">Fields marked “*” are required</span></div>
+          <div class="form__selectblock"><span class="form__selecttext">Enquiry Type *</span>
+            <p id="selectvalid"></p>
+            <select class="form__select" id="select" name="">                    </select>
+            <textarea class="form__selectinput" id="selectvalue" placeholder="Other" Type="text"></textarea>
+          </div>
+          <div class="form__emailnameblock">
+            <div class="form__nameblock"><span class="form__nameblocktext" id="login">Name *</span>
+              <p id="namevalid"></p>
+              <textarea class="form__input" id="name" placeholder="Dentist" Type="text"></textarea>
+            </div>
+            <div class="form__emailblock"><span class="form__nameblocktext" id="password">Email *</span>
+              <p id="emailvalid"></p>
+              <textarea class="form__input" id="email" placeholder="rachelm@gmail.com" Type="email"></textarea>
+            </div>
+          </div>
+          <div class="form__subjectblock"><span class="form__nameblocktext">Subject *</span>
+            <p id="subjectvalid"></p>
+            <textarea class="form__subjectinput" id="subject"></textarea>
+          </div>
+          <div class="form__descriptionblock">
+            <div class="form__blockcounter"><span class="form__nameblocktext">Description *</span><span class="form__counter">(0/100)</span></div>
+            <p id="descriptionvalid"></p>
+            <textarea class="form__descriptioninput" id="description" maxlength="100" Type="text"></textarea>
+          </div><span id="imgvalid"> </span>
+          <div class="form__savefotoblock">
+            <label class="form__label" for="iputfileimg">
+              <input class="form__inputfileimg" id="inputfileimg" type="file"><span class="form__spantitle">Add photo </span><span class="form__spandescription">Minimum size of 300x300 jpeg ipg png 5 MB</span>
+            </label>
+          </div>
+          <div class="form__btn">
+            <input class="form__button" Type="submit" value="Submit" id="submit">
+          </div>
+        </div>
+      </form>
+      <div class="footer">
+        <div class="footer__left"><span class="footer__text">Denteez Copyright 2015</span></div>
+        <div class="footer__right">
+          <div class="footer__row1">
+            <div class="footer__text footer__text_marginl">Support</div>
+          </div>
+          <div class="footer__row2">
+            <div class="footer__text footer__text_marginl">Privacy Policy </div>
+          </div>
+          <div class="footer__row3">
+            <div class="footer__text footer__text_marginl">Terms of use</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>

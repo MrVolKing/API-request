@@ -1,0 +1,97 @@
+.content-center{
+    width: 34%;
+ 
+    &__addservice{
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 1px 20px;
+    }
+
+    &__titleblock{
+        width: 344px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__title{
+        font-size: 30px;
+    }
+
+    &__blocklink{
+        width: 145px;
+        height: 30px;
+        background-color: #87b448;
+        border: none;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__linktext{
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+
+    &__blockservices{
+        border: 1px solid #e0e2e6;
+        border-radius: 6px;
+        padding: 16px 16px 0 16px; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__services:hover{
+        cursor: pointer;
+        .content-center__imageservice{
+            background-color: #f4f7fb;
+        }
+        .content-center__titleservice{
+            color: #87b448;
+        }
+        
+    }
+
+    &__imageservice{
+        width: 140px;
+        height: 140px;
+        border: 1px solid #e0e2e6;
+        border-radius: 6px;
+        img{
+            width: 72px;
+            height: 72px;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+    &__titleservice{
+        width: 105px;
+        text-align: center;
+        margin: 18px 0 17px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__descriptionservice{
+        width: 100px;
+        font-size: 13.6px;
+    }
+}

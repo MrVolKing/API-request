@@ -1,0 +1,128 @@
+.content-right{
+    padding: 0 16px;
+    width: 244px;
+
+
+    &__people{
+        border-bottom: 1px solid $colorborder;
+    }
+
+    &__showpeople{
+        padding: 0 0 20px 1px;
+    }
+
+    &__namepeople{
+        line-height: 13px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__name{
+        color: $colortitle;
+    }
+
+    &__peopleblock{
+        display: flex;
+    }
+
+    &__blockimg{
+        margin-right: 10px;
+    }
+
+    &__imgpeople{
+        width: 80px;
+        height: 80px;
+        border: none;
+        border-radius: 6px;
+    }
+
+    &__blockdescriptionpeople{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__descriptionpeople{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__descriptiontextpeople{
+        font-size: 14px;
+        color: $colortext;
+    }
+
+    &__from{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__blocklinkpeople{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__linkpeople{
+        font-size: 12px;
+        text-decoration: none;
+        color: $colortitle;
+    }
+
+    &__products{
+        border-bottom: 1px solid $colorborder;
+    }
+
+    &__showproducts{
+        padding: 0 0 20px 0;
+    }
+
+    &__nameproducts{
+        line-height: 13px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__productsblock{
+        display: flex;
+    }
+
+    &__imgproducts{
+        width: 80px;
+        height: 80px;
+        border: none;
+        border-radius: 6px;
+    }
+
+    &__blockdescriptionproducts{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__descriptionproducts{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+
+    &__descriptiontextproducts{
+        font-size: 14px;
+        color: $colortext;
+    }
+
+}
