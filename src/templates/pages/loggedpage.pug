@@ -38,25 +38,25 @@ block content
                 .form__emailnameblock
                     .form__nameblock
                         span.form__nameblocktext#login Name *
-                        p#namevalid
+                        p#namevalid(style="color: red;")
                         textarea#name.form__input(placeholder="Dentist", Type="text")
                     .form__emailblock
                         span.form__nameblocktext#password Email *
-                        p#emailvalid
+                        p#emailvalid(style="color: red;")
                         textarea#email.form__input(placeholder="rachelm@gmail.com", Type="email")
                 .form__subjectblock
                     span.form__nameblocktext Subject *
-                    p#subjectvalid
+                    p#subjectvalid(style="color: red;")
                     textarea#subject.form__subjectinput
                 .form__descriptionblock
                     .form__blockcounter
                         span.form__nameblocktext Description *
                         span.form__counter (0/100)
-                    p#descriptionvalid
+                    p#descriptionvalid(style="color: red;")
                     textarea#description.form__descriptioninput(maxlength="100", Type="text")
-                span#imgvalid 
+                span#imgvalid(style="color: red;")
                 .form__savefotoblock
-                    label.form__label(for="iputfileimg")
+                    label.form__label(for="inputfileimg")
                         input.form__inputfileimg#inputfileimg(type="file")
                         span.form__spantitle Add photo 
                         span.form__spandescription Minimum size of 300x300 jpeg ipg png 5 MB

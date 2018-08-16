@@ -23,7 +23,6 @@ submitbtn.addEventListener ('click', (event) => {
         event.preventDefault();
         let formdata = new FormData();
         let isvalid = true;
-        let iputfileimgvalue = iputfileimg.files[0];
         if(select.value.length==0){
                 document.getElementById("selectvalid").innerHTML="*данное поле обязательно для заполнения";
                 isvalid = false;
@@ -53,6 +52,7 @@ submitbtn.addEventListener ('click', (event) => {
         }
 
         if(description.value.length==0){
+                // description.style.color ="red";  
                 document.getElementById("descriptionvalid").innerHTML="*данное поле обязательно для заполнения";
                 isvalid = false; 
         } else {
